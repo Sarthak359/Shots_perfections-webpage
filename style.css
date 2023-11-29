@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;600&family=Lora&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*      font-family: 'Courgette', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Lora', serif;
+        font-family: 'Poppins', sans-serif;       */
+
+
+body{
+    margin :0;
+    background-color: #210002;
+    font-family: Poppins;
+    font-size: 15px;
+}
+.banner{
+    height: 110vh;
+    background-color: #f1ab1f;
+    position: relative;
+    overflow: hidden;
+}
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+.banner .bg-1{
+    background-image: url('img/0.png');
+}
+.banner .bg-2{
+    background-image: url('img/1.png');
+    top: 15%;
+}
+.banner .bg-3{
+    background-image: url('img/2.png');
+    top: 10%;
+}
+.banner .bg-4{
+    background-image: url('img/3.png');
+    top: 10%;
+}
+.banner .bg-5{
+    background-image: url('img/4.png');
+    top: 10%;
+}
+.banner .bg-6{
+    background-image: url('img/5.png');
+    top: 10%;
+}
+.banner .bg-7{
+    background-image: url('img/6.png');
+    top: 15%;
+}
+.banner .bg-8{
+    background-image: url('img/7.png');
+    top: 15%;
+}
+.banner .bg-9{
+    background-image: url('img/8.png');
+}
+.banner  h1{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+.intro{
+    top: 20%;
+    min-height: 50vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.intro p{
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+.intro button{
+    background-color: #FD0003;
+    padding: 10px 50px;
+    border: 1px solid #591F1D;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+}
+.animation-show{
+    transform: translateY(50px);
+    opacity: 0;
+	cursor: pointer;
+	transition: 0.8s;
+}
+.animation-show img{
+	box-shadow: 4px 7px 7px 0 #00000042;
+}
+
+.animation-show img:hover{
+	transform: scale(1.2);
+}
+.active .animation-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.animation-show:nth-child(2){
+    transition-delay: 0.3s;
+}
+.animation-show:nth-child(3){
+    transition-delay: 0.6s;
+}
+.animation-show:nth-child(4){
+    transition-delay: 0.9s;
+}
+.library{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: #fff;
+}
+.library img{
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#logo{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 100px;
+}
+#logo .logo-svg1{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+}
+#logo .logo-svg2{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 45px;
+}
+#logo .logo-svg3{
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.quote{
+    padding-top: 200px;
+    padding-bottom: 230px;
+}
+.quote .left{
+    float: left;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3vw;
+    width: 50%;
+    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 80px;
+    text-align: center;
+    line-height: 150%;
+}
+.quote .right{
+    float: right;
+    width: 30%;
+    height: 5vw;
+}

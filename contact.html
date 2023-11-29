@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Us Page Design using Html CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+<body style="background-color: #f1ab1f;">
+    <section id="home">
+        <div class="nav-bar" style="background-color:rgba(81, 63, 63, 0.24);">
+            <a href="index.html">
+                <div class="intro">
+                    <img src="images/69.png" alt="" style="width: 90px;height:67px;margin-left:40px;margin-top:7px">
+                </div>
+            </a>
+            <div style="margin-left:60px;">
+                <ul style="color: white;">      
+                    <li style="padding-top: 17px;"><a id="hover" href="index.html" style="color: white;margin-left:23vw;">Home</a></li>
+                    <li style="padding-top: 17px;"><a id="hover" href="gallery.html" style="color: white;margin-left:4vw">Gallery</a></li>
+                    <li style="padding-top: 17px;"><a id="hover" href="contact.html" style="color: white;margin-left:4vw">Contact</a></li>
+                    <li style="padding-top: 17px;padding-left: 100px;">
+                        <button class="login-btn" id="login-btn" style="margin-left:20vw;">LOGIN</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span id="close-btn" class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button id="close-login1" class="close-login1" type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button id="close-login2"  class="close-login2" type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="section-wrapper" style="margin-top: 100px;">
+        <div class="box-wrapper">
+            <div class="info-wrap" style="height: 575px;">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+                <ul class="info-details" style="flex-direction: column;">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+91 74193 45040</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email:</span> <a href="mailto:apulyani55@gmail.com">apulyani55@gmail <br> .com</a>
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/abhinav.pulyani?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/shotsperfections/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/abhinav-pulyani-79664824b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-wrap">
+                <form action="https://formsubmit.co/aggarwalsarthak359@gmail.com" method="POST" enctype="multipart/form-data">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" name="First Name" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" name="Last Name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" name="email" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="phone" name="Phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group"  style="height: 100px;"  >
+                            <textarea name="message" placeholder="Write your message"></textarea>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <input  style="height: 50px;padding:15px;padding-left:35px" type="file" name="attachment" accept="image/png, image/jpeg">    
+                        </div>
+                    <div>
+                        <input id="submit-button" type="submit" class="submit" placeholder="submit">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_autoresponse" value="Message has been send!">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                </form>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
